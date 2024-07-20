@@ -11,6 +11,7 @@ class Program
         var clientManager = new ClientManager();
         var handleClientRequestUseCase = new HandleClientRequestUseCase(requestLimiter, componentPriceService);
 
+
         Console.WriteLine("Enter 'server' to run as server or 'client' to run as client:");
         string mode = Console.ReadLine().ToLower();
 
